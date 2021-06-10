@@ -1,9 +1,7 @@
 
-
 var mydata;
 
 window.onload = loadJSON;
-
 
 function loadJSON () {
 
@@ -19,20 +17,19 @@ function loadJSON () {
     
     loadPage ();
 
-    startAnim ();
+    activateScrollTrigger ();
 
   });
 
 }
 
-
 function loadPage ()
 {
 
 
-    $('#pic').append ('<img src="assets/images/'+ mydata.image +'" alt="self" class="img-fluid img-thumbnail" >');
+    $('#pic').append ('<img src="assets/images/'+ mydata.details.image +'" alt="self" class="img-fluid img-thumbnail" >');
 
-    $('#details').append ('<p class="my-1">'+ mydata.whatido + '</p>');
+    $('#details').append ('<p class="my-1">'+ mydata.details.whatido + '</p>');
 
     //load skills..
     var skills = mydata.skills.programming.tech;
@@ -48,8 +45,6 @@ function loadPage ()
     }
 
     //load recent projects
-
-    
 
     var recentWork = mydata.recentwork;
 
@@ -74,10 +69,76 @@ function loadPage ()
 
     }
 
+    //load work history
+
+    var workHistory = mydata.workhistory;
+
+    if ( workHistory.length > 0 ){
+
+        for (var i = 0; i < workHistory.length; i++ ) { 
+        
+          var desc = '';
+
+          for ( var j = 0; j < workHistory[i].job_desc.length; j++ ) {
+
+            desc += '<li>'+ workHistory[i].job_desc[j] +'</li>';
+
+          }
+
+          var company = workHistory[i].company == '' ? 'N/A' : workHistory[i].company;
+
+          var stra = `<div class="row mb-1">
+                        <div class="col-lg-4 bg-custom1 rounded">
+                          <div class="text-white p-2">`+ workHistory[i].date.from +` – `+ workHistory[i].date.to +`</div>
+                        </div>
+                        <div class="col-lg-8 bg-custom3 rounded-right">
+                          <small> Company : `+ company +`</small>
+                          <h5 class="m-0"><strong>`+ workHistory[i].job_title +`</strong></h5>
+                          <ul>`+ desc + `</ul>
+                        </div>
+
+                      </div>`;
+
+          $('#work_cont').append (stra);
+
+        }
+
+    }
+
+
+    var contacts = mydata.contacts;
+
+    if ( contacts.length > 0 ){
+
+        for ( var i = 0; i < contacts.length; i++ ) {
+
+          $('#contacts_cont').append ('<div class="mb-2"><span class="material-icons align-bottom mr-2">'+ contacts[i].icon +'</span>'+ contacts[i].value +'</div>')
+        }
+    }
+
+    var socmed = mydata.socialmedia;
+
+    if ( socmed.length > 0 ){
+
+        for ( var i = 0; i < socmed.length; i++ ) {
+
+          var strc = `<div class="mr-2">
+                        <a href="`+ socmed[i].link+`" target="_blank">
+                          <img src="assets/images/socials/`+ socmed[i].img +`" alt="`+ socmed[i].name +`" class="img-fluid" width="50"> 
+                        </a>
+                      </div>`;
+
+          $('#socials_cont').append (strc);
+
+        }
+    }
+
+
+
 
 }
 
-function startAnim () {
+function activateScrollTrigger () {
 
   gsap.registerPlugin ('ScrollTrigger');
   gsap.set (['.my-img', '.card-custom'], {transformOrigin : '50% 50%'});
