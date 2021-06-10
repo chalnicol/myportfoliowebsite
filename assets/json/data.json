@@ -1,0 +1,200 @@
+{
+    "fullname" : "Charlou E. Nicolas",
+    "occupation" : "Web Developer",
+    "age" : 38,
+    "gender" : "Male",
+    "skills" : {
+
+        "programming" : {
+
+            "title" : "Programming Languages Proficiency",
+
+            "kind" : [
+
+                {
+                    "title" : "HTML5",
+                    "img" : "html5.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "CSS3",
+                    "img" : "css3.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "",
+                    "img" : "",
+                    "proficiency" : ""
+                }
+
+            ]
+
+        }
+    },
+    "recent_work" : [
+        {
+            "img" : "connectfour.png",
+            "title" : "Connect Four",
+            "description" : "",
+            "cta" : "Play This Game",
+            "link" : "https://connectfour2021.herokuapp.com/"
+        },
+        {
+            "img" : "salpakan.png",
+            "title" : "Game of the Generals",
+            "description" : "",
+            "cta" : "Play This Game",
+            "link" : "https://salpakan-2017.herokuapp.com/"
+        },
+        {
+            "img" : "blockpuzzle.png",
+            "title" : "Block Puzzle",
+            "description" : "",
+            "cta" : "Play This Game",
+            "link" : "https://chalnicol.tech/games/blockpuzzle/"
+        },
+        {
+            "img" : "solitaire.png",
+            "title" : "Solitaire",
+            "description" : "",
+            "cta" : "Play This Game",
+            "link" : "https://chalnicol.tech/games/solitaire/"
+        }
+    ],
+    "work_history" : [
+        
+        {
+            "date" : {
+                "to" : "Present",
+                "from" : "September 2015"
+            },
+            
+            "company" : "",
+            "job_description" : "Freelance PHP/JS Developer",
+            "job_responsibities" : [
+                "Handles custom development/programming tasks that requires JS/PHP scripting."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "September 2015",
+                "from" : "May 2014"
+            },
+            
+            "company" : "StrikeVideo",
+            "job_description" : "Quality Assurance Specialist",
+            "job_responsibities" : [
+                "QA’d all ad units created by StrikeVideo, mostly interstitial video.",
+                "Made sure all ad units have been tested, all requirements met to their respected live environments."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "May 2014",
+                "from" : "December 2012"
+            },
+            
+            "company" : "StrikeVideo",
+            "job_description" : "Ad Operations Trafficker",
+            "job_responsibities" : [
+                "Pulls availability forecast.",
+                "Traffics ads in Appnexus, Rubicon and AdWords; familiar with 3rd party vendors such as DFA, Mediamind, FlashTalking and Pointroll.",
+                "QAs creative tags before setting them live.",
+                "Works with Account Management in applying optimizations to live campaigns to ensure full delivery.",
+                "Troubleshoots site issues and works with Tech Support to resolve the issue."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "December 2012",
+                "from" : "March 2012"
+            },
+            
+            "company" : "Smart Rover",
+            "job_description" : "Flash Game Developer",
+            "job_responsibities" : [
+                "Handles custom development/programming tasks that requires Flash scripting."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "September 2011",
+                "from" : "April 2011"
+            },
+            
+            "company" : "Wideout Techonology",
+            "job_description" : "Technical Expert",
+            "job_responsibities" : [
+                "Handles rich media escalations and provide solutions in the earliest time possible.",
+                "Handles testing of new rich media products before they are publicly released to production.",
+                "Develops software system using Google technologies that improves/solves production issues."
+            ]
+
+        },
+
+        {
+            "date" : {
+                "to" : "April 2011",
+                "from" : "March 2010"
+            },
+            
+            "company" : "Wideout Techonology",
+            "job_description" : "Rich Media Specialist",
+            "job_responsibities" : [
+                "Handles campaigns from Start to finish (From Development phase up to Client Approval).",
+                "Manages Rich Media Campaigns and Technical Requests assigned to the team.",
+                "Communicates with Campaign Managers, Creative Technical Account Managers with regards to campaign details, escalation, and reporting of bugs found on development."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "March 2010",
+                "from" : "December 2009"
+            },
+            
+            "company" : "Wideout Techonology",
+            "job_description" : "Rich Media Quality Assurance Specialist",
+            "job_responsibities" : [
+                "Communicates with the Production Team Lead, QA Lead, and Production Services regarding Rich Media campaigns, issues, and documentation of campaigns.",
+                "Checks and tests various types of ads with different levels of complexity according to site and client specifications."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "December 2009",
+                "from" : "December 2008"
+            },
+            
+            "company" : "Wideout Techonology",
+            "job_description" : "Senior Rich Media Developer",
+            "job_responsibities" : [
+                "Communicates with the Team Lead and QA Lead regarding tasks at hand.",
+                "Handled various types of ad formats with different levels of complexity.",
+                "Handled Custom development tasks that requires Web services, scripts and 3rd party APIs.",
+                "Trains newly hired developers in the Production floor."
+            ]
+        },
+
+        {
+            "date" : {
+                "to" : "December 2008",
+                "from" : "December 2007"
+            },
+            
+            "company" : "Wideout Techonology",
+            "job_description" : "Junior Rich Media Developer",
+            "job_responsibities" : [
+                "Converted client-built Flash advertisements to production standards, requiring solid ability to read and comprehend 3rd-party code while adhering to strict best practices. Modified client code to utilize in-house video player and track user interaction.",
+                "Handled Custom development tasks that requires Web services, scripts and 3rd party APIs.",
+                "Trains newly hired developers in the Production floor."
+            ]
+        }
+
+    ]
+} 

@@ -1,0 +1,114 @@
+
+      
+      
+
+      
+
+html, body {
+  background-color: #cccccc;
+}
+.bg-jumbo {
+
+    border-radius: 0 !important;
+    width: 100%;
+    background: url('../images/jumbo_img2.png') no-repeat;
+    background-position: center;
+    background-size: cover; /*now this is known for the safari*/
+
+}
+
+.btn-custom1 {
+    background-color: #2b2d42;
+    color : #FBF9F7 !important;
+}
+.btn-custom1:hover {
+    background-color: #383a50;
+}
+
+.btn-custom2 {
+    background-color: #8d99ae;
+    color : #FBF9F7 !important;
+}
+
+.btn-custom2:hover {
+    background-color: #a6adb9;
+}
+
+.btn-custom3 {
+    background-color: #ef233c;
+    color : #FBF9F7 !important;
+}
+
+.btn-custom3:hover {
+    background-color: #eb6d7c;
+}
+
+.bg-custom1 {
+    background-color: #2b2d42;
+}
+.bg-custom2 {
+    background-color: #8d99ae;
+}
+.bg-custom3 {
+    background-color: #edf2f4;
+}
+.bg-custom4 {
+    background-color: #ef233c;
+}
+.bg-custom5 {
+    background-color: #d90429;
+}
+
+.text-custom1 {
+    color : #2b2d42;
+}
+
+.text-custom2 {
+    color : #8d99ae;
+}
+
+.text-custom3 {
+    color : #edf2f4;
+}
+
+
+.bg-details {
+  width: 100%;
+  background-image: url('../images/check.jpg');
+  background-size: cover;
+}
+.card-custom {
+    padding : 0.5rem;
+    margin-bottom : 1rem;
+    width: 100%;
+    max-width: 16rem;
+    border-radius: 0.3rem;
+    background-color: #edf2f4;
+    box-shadow: 1px 1px 5px #404257e3;
+}
+
+.my-link {
+  
+  color:#f3f3f3;
+}
+.my-link:hover{
+  color: #cccccc;
+  text-decoration: none;
+}
+
+#work-history ul {
+    font-size: 0.9rem;
+}
+
+.my-img {
+    border : 1px solid #cccccc;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
+    max-width: 80px;
+}
+
+@media only screen and (max-width: 412px) {
+    .my-img {
+        max-width: 65px;
+    }
+}
