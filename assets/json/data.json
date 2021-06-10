@@ -1,15 +1,14 @@
 {
     "fullname" : "Charlou E. Nicolas",
-    "occupation" : "Web Developer",
-    "age" : 38,
-    "gender" : "Male",
+    "image" : "self.jpg",
+    "whatido" : "I was a Developer, Ad Trafficker and a Quality Assurance Specialist but now I just develop games as a hobby. I still take interviews in search of a great team & projects that interest me.",
     "skills" : {
 
         "programming" : {
 
             "title" : "Programming Languages Proficiency",
 
-            "kind" : [
+            "tech" : [
 
                 {
                     "title" : "HTML5",
@@ -22,46 +21,111 @@
                     "proficiency" : "advanced"
                 },
                 {
-                    "title" : "",
-                    "img" : "",
-                    "proficiency" : ""
+                    "title" : "Javascript",
+                    "img" : "js.jpg",
+                    "proficiency" : "advanced"
+                },
+                
+                {
+                    "title" : "JQuery",
+                    "img" : "jquery.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "Bootstrap",
+                    "img" : "bootstrap.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "PHP",
+                    "img" : "php.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "Laravel",
+                    "img" : "laravel.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "Codeigniter",
+                    "img" : "codeigniter.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "MySQL",
+                    "img" : "mysql.jpg",
+                    "proficiency" : "advanced"
+                },
+                {
+                    "title" : "Java",
+                    "img" : "java.jpg",
+                    "proficiency" : "intermediate"
+                },
+                {
+                    "title" : "SocketIO",
+                    "img" : "socketio.jpg",
+                    "proficiency" : "intermediate"
+                },
+                {
+                    "title" : "Phyton",
+                    "img" : "phyton.jpg",
+                    "proficiency" : "beginner"
+                },
+                {
+                    "title" : "VueJS",
+                    "img" : "vuejs.jpg",
+                    "proficiency" : "beginner"
+                },
+                {
+                    "title" : "MongoDB",
+                    "img" : "mongodb.jpg",
+                    "proficiency" : "beginner"
+                },
+                {
+                    "title" : "NodeJS",
+                    "img" : "nodejs.jpg",
+                    "proficiency" : "beginner"
+                },
+                {
+                    "title" : "GSAP",
+                    "img" : "gsap.jpg",
+                    "proficiency" : "beginner"
                 }
-
             ]
 
         }
     },
-    "recent_work" : [
+    "recentwork" : [
         {
-            "img" : "connectfour.png",
+            "img" : "image1.png",
             "title" : "Connect Four",
-            "description" : "",
+            "description" : "HTML5 Game",
             "cta" : "Play This Game",
             "link" : "https://connectfour2021.herokuapp.com/"
         },
         {
-            "img" : "salpakan.png",
-            "title" : "Game of the Generals",
-            "description" : "",
+            "img" : "image2.png",
+            "title" : "Salpakan",
+            "description" : "HTML5 Game",
             "cta" : "Play This Game",
             "link" : "https://salpakan-2017.herokuapp.com/"
         },
         {
-            "img" : "blockpuzzle.png",
+            "img" : "image3.png",
             "title" : "Block Puzzle",
-            "description" : "",
+            "description" : "HTML5 Game",
             "cta" : "Play This Game",
-            "link" : "https://chalnicol.tech/games/blockpuzzle/"
+            "link" : "https://chalnicol.tech/assets/games/blockpuzzle/"
         },
         {
-            "img" : "solitaire.png",
-            "title" : "Solitaire",
-            "description" : "",
-            "cta" : "Play This Game",
-            "link" : "https://chalnicol.tech/games/solitaire/"
+            "img" : "image5.png",
+            "title" : "DoorDash",
+            "description" : "Ad",
+            "cta" : "Go to Page",
+            "link" : "https://chalnicol.tech/assets/ads/samplebanner/"
         }
     ],
-    "work_history" : [
+    "workhistory" : [
         
         {
             "date" : {

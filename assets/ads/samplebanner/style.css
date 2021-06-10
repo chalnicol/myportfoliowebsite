@@ -1,0 +1,123 @@
+
+
+body {margin: 0px;}
+
+#container {
+	background-color: black;
+	cursor: pointer;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	pointer-events: none;
+    width: 960px;
+	height: 640px;
+}
+
+#container * {
+	position: absolute;
+}
+
+
+#border{
+    border: 1px solid gray;  
+	width: 100%;
+	height: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#clickthru{
+	width: 100%;
+	height: 100%;
+	pointer-events: auto;
+}
+
+/*-------------- SPRITE -------------*/
+
+.sprite { background: url('sprite.png') no-repeat top left; width: 84px; height: 84px;  } 
+.sprite.ball1 { background-position: 0 0; } 
+.sprite.ball2 { background-position: 0 -94px; } 
+.sprite.cl_1 { background-position: 0 -188px; width: 279px; height: 133px; } 
+.sprite.cta { background-position: 0 -331px; width: 306px; height: 54px; } 
+.sprite.cta2 { background-position: 0 -395px; width: 306px; height: 54px; } 
+.sprite.bike_1 { background-position: 0 -459px; width: 374px; height: 264px; } 
+.sprite.welcome_1 { background-position: 0 -733px; width: 308px; height: 143px; } 
+.sprite.headline_2a { background-position: 0 -886px; width: 418px; height: 66px; } 
+.sprite.headline_2b { background-position: 0 -962px; width: 418px; height: 48px; } 
+.sprite.headline_2c { background-position: 0 -1020px; width: 418px; height: 54px; } 
+.sprite.welcome_2 { background-position: 0 -1084px; width: 132px; height: 58px; } 
+.sprite.bike_2 { background-position: 0 -1152px; width: 194px; height: 164px; } 
+.sprite.cl_4 { background-position: 0 -1326px; width: 279px; height: 133px; } 
+.sprite.grass_1 { background-position: 0 -1469px; } 
+.sprite.grass_2 { background-position: 0 -1563px; } 
+.sprite.grass_3 { background-position: 0 -1657px; } 
+.sprite.legal { background-position: 0 -1751px; width: 572px; height: 36px; } 
+.sprite.logo { background-position: 0 -1797px; width: 402px; height: 96px; } 
+.sprite.cl_2 { background-position: 0 -1903px; width: 279px; height: 133px; } 
+.sprite.cl_3 { background-position: 0 -2046px; width: 279px; height: 133px; } 
+.sprite.welcome_3 { background-position: 0 -2189px; width: 455px; height: 226px; } 
+.sprite.food_1 { background-position: 0 -2425px; width: 474px; height: 388px; } 
+.sprite.food_2 { background-position: 0 -2823px; width: 672px; height: 336px; } 
+
+
+/*--------- SPRITE POSITION ---------*/
+
+.bike_1 { top: 389px; left: -359px; }
+.bike_2 { top: 251px; left: 950px; }
+.ball1 { top: 363px; left: 420px; }
+.ball2 { top: 363px; left: 420px; }
+.butterfly_1 { top : 88px; left : 428px }
+.butterfly_2 { top : 96px; left : 859px }
+.cl_1 { top : 14px; left : 736px }
+.cl_2 { top : -6px; left : 137px }
+.cl_3 { top : 92px; left : -50px }
+.cl_4 { top : 99px; left : 357px }
+.food_1 { top : 89px; left : 159px }
+.food_2 { top : 197px; left : -204px }
+.grass_1 { top : 375px; left : 347px }
+.grass_2 { top : 423px; left : 24px }
+.grass_3 { top : 404px; left : 257px }
+.cta { top : 413px; left : 560px }
+.cta2 { top : 413px; left : 560px }
+.headline_2a { top : 224px; left : 504px }
+.headline_2b { top : 288px; left : 504px }
+.headline_2c { top : 336px; left : 504px }
+.legal { top : 579px; left : 194px }
+.logo { top : 482px; left : 76px }
+.welcome_1 { top : 176px; left : 523px }
+.welcome_2 { top : 240px; left : 623px }
+.welcome_3 { top : 251px; left : 487px }
+
+/*-------- IMAGES | POSITION --------*/
+
+
+.butterfly_a {
+	background: url('butterfly1.png');
+	width: 60px;
+	height : 60px;
+	top  : 88px; 
+	left : 428px;
+}
+.butterfly_b {
+	background: url('butterfly2.png');
+	width: 80px;
+	height : 80px;
+	top  : 96px; 
+	left : 859px
+}
+
+.bg {
+    
+    background: url('bg.jpg') top left no-repeat;
+	width:960px;
+	height : 640px;
+	top : 0;
+	left : 0;
+    /* background-size: 300px 3500px;
+    width: 300px;
+    height: 250px;
+    top: 123px;
+    left: 92px; */
+    
+}
+
