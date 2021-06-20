@@ -34,11 +34,11 @@ function loadPage ()
 
     $('#details').append ('<p class="my-1">'+ mydata.details.whatido + '</p>');
 
-    for ( var i = 0; i < circlesCount; i++ ) {
+    // for ( var i = 0; i < circlesCount; i++ ) {
 
-      $('.bg-anims').append ('<div class="circle"></div>');
+    //   $('.bg-anims').append ('<div class="circle"></div>');
 
-    }
+    // }
     
 
 
