@@ -26,10 +26,21 @@ function loadJSON () {
 function loadPage ()
 {
 
+    //load what i do elements
 
-    $('#pic').append ('<img src="assets/images/'+ mydata.details.image +'" alt="self" class="img-fluid img-thumbnail" >');
+    var circlesCount = 10;
+
+    $('#pic').append ('<img src="assets/images/'+ mydata.details.image +'" alt="self" class="img-fluid img-thumbnail rounded" >');
 
     $('#details').append ('<p class="my-1">'+ mydata.details.whatido + '</p>');
+
+    for ( var i = 0; i < circlesCount; i++ ) {
+
+      $('.bg-anims').append ('<div class="circle"></div>');
+
+    }
+    
+
 
     //load skills..
     var skills = mydata.skills.programming.tech;
@@ -56,7 +67,7 @@ function loadPage ()
                       <div class="card-custom mx-auto" >
                         <img class="img-fluid w-100" src="assets/images/recent/`+ recentWork[i].img +`" alt="Connect Four">
                         <div class="p-2">
-                            <h5 class="p-1">`+ recentWork[i].title +`</h5>
+                            <h5><strong>`+ recentWork[i].title +`</strong></h5>
                             <p class="px-1">`+ recentWork[i].description +`</p>
                             <a href="`+ recentWork[i].link +`" target="_blank" class="btn btn-custom1">`+ recentWork[i].cta +`</a>
                         </div>
@@ -132,26 +143,34 @@ function loadPage ()
 
         }
     }
+}
 
+function getRandomColor () {
 
-
-
+    return 'rgba('+ Math.floor(Math.random () *256 ) +', '+ Math.floor(Math.random () *256 ) +', '+ Math.floor(Math.random () *256 )+', 0.3 )'
 }
 
 function activateScrollTrigger () {
 
   gsap.registerPlugin ('ScrollTrigger');
-  gsap.set (['.my-img', '.card-custom'], {transformOrigin : '50% 50%'});
 
+  var w = gsap.getProperty ('#whatido', 'width'), 
+      h = gsap.getProperty ('#whatido', 'height');
+    
   let tla = gsap.timeline ({
     scrollTrigger : {
-        trigger : "#about",
-        start : "top 45%",
+      trigger : "#about",
+      start : "top 45%",
     }
   });
 
-  tla.from ('#pic', { duration : 0.6, x: -500, opacity:0, ease : "power2.in" })
-      .from ('#details', { duration : 1, opacity:0, y: -50, ease : "power2.in"} );
+  tla
+      .from ('#pic', { duration : 0.5, x: -w/3, opacity:0,})
+      .to ('#pic', { duration : 1, rotation : 360, scale:0.8, x : w*0.1, yoyo:true, ease : 'power2.out', repeat: 1, repeatDelay : 0.5 })
+      .to ('#pic', { duration : 1, y : -30, yoyo:true, ease : 'bounce.in', repeat: 1 }, '-=2.8')
+      .from ('#details', { duration : 1, opacity:0, y: -50, ease : "bounce.out"});
+
+  
 
   let tl = gsap.timeline ({
   scrollTrigger : {
@@ -183,10 +202,11 @@ function activateScrollTrigger () {
 
     scale : 0,
     y : -20,
-    duration : 0.5,
-    ease : 'power1.inOut',
+    x : -30,
+    duration : 1,
+    ease : 'elastic(1,0.8)',
     stagger : {
-      each : 0.1
+      each : 0.3
     },
     onComplete : () => hoverFunc()
 

@@ -43,7 +43,7 @@
     <!-- <div class="container p-0"> -->
 
       <!-- nav -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-custom1 rounded-bottom">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom1">
         <a class="navbar-brand" href="#">
           <img src="assets/images/logo.png" class="img-fluid align-top" width="30" alt="">
           Chalnicol</a>
@@ -66,7 +66,7 @@
         <!-- jumbotron -->
         <div class="d-flex h-100 bg-jumbo" style="min-height: 320px;">
          
-            <div class="m-auto text-center">
+            <div class="m-auto text-center" style="width:95%">
               <h1 class="display-4">Hi, I am Charlou Nicolas!</h1>
               <p class="lead">Welcome to my portfolio website.</p>
               <p>
@@ -80,11 +80,11 @@
         <!-- about... -->
         <section id="whatido">
 
-          <br>
-          <div class="py-4 mx-auto" style="width:95%;max-width:980px;">
+          <div class="bg-anims"></div>
+          <div id="mydetails">
             <div class="row justify-content-center">
               <div class="col-sm-auto">
-                <div id="pic" class="mx-auto" style="max-width: 200px;">
+                <div id="pic" class="mx-auto mb-4 mb-sm-0" style="max-width: 180px;">
                   <!-- insert pic -->
                 </div>
               </div>
@@ -96,23 +96,32 @@
               </div>
             </div>
           </div>
-          
-          
+
         </section>
         
-        <hr style="max-width: 500px;">
+        <hr class="my-hr">
 
          <!-- expertise... -->
         <section id="expertise">
 
-          <div class="text-center my-4">
-            <h4><strong>Top Expertise</strong></h4>
-      
-            <p>Fullstack Developer with primary focus on PHP / HTML5 Games : <span class="mr-2"></span><a href="https://chalnicol.tech/assets/pdf/charlounicolas.pdf" class="btn btn-sm btn-custom2" target="_blank">Download Resume</a></p>
-            
-          </div>
+          <div class="text-center mt-4">
 
-          <div id="skill_cont" class="p-4 my-4 mx-auto" style="max-width: 850px;">
+            <h4><strong>Top Expertise</strong></h4>
+         
+            <div class="d-flex flex-column flex-lg-row justify-content-center">
+              <div>
+                <p>Fullstack Developer with primary focus on PHP / HTML5 Games :</p>
+              </div>
+              <div class="ml-0 ml-lg-3">
+                <a href="https://chalnicol.tech/assets/pdf/charlounicolas.pdf" class="btn btn-sm btn-custom2" target="_blank">Download Resume</a>
+              </div>
+            </div>
+
+        </div>
+      
+          
+
+          <div id="skill_cont" class="p-4 mx-auto" style="max-width: 850px;">
 
             <div class="form-row mb-2">
               <div class="col-md-4 mb-2 mb-md-0 p-2 bg-custom1 rounded my-block">
@@ -147,35 +156,29 @@
               </div>
             </div>
            
-           
-
-          
-
-
           </div>
 
         </section>
           
-        <hr style="max-width: 500px;">
+        <hr class="my-hr">
         
         <!-- recent works -->
         <section id="projects">
 
-            <div class="text-center mb-4">
+            <div class="text-center mt-4 mb-2">
               <h4><span class="material-icons align-bottom mr-2">apps</span><strong>Recent Projects</strong></h4>
             </div>
             <div id="projects_cont" class="py-4 row mx-auto" style="width:95%;max-width:1180px;">
               <!-- insert recent projects -->
             </div>
-            <br>
 
         </section>
 
-        <hr style="max-width: 500px;">
+        <hr class="my-hr">
 
         <section id="workhistory">
 
-          <div class="text-center mb-4">
+          <div class="text-center mt-4 mb-2">
             <h4><span class="material-icons align-bottom mr-2">work</span><strong>Work History</strong></h4>
           </div>
 
@@ -183,8 +186,8 @@
             <!-- insert work history -->
           </div>
 
-          <br><br>
-  
+          <br>
+          
         </section>
         
       </main>
